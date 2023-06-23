@@ -8,6 +8,10 @@ body {
   height: 100vh;
 }
 
+#home{
+  width: 20px;
+  height: 20px;
+}
 
 .nav-container {
   width: 100%;
@@ -34,6 +38,8 @@ body {
 
 .active {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-container a {

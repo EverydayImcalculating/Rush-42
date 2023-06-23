@@ -10,7 +10,18 @@ body {
 
 .nav-container {
   height: 10%;
-  background-color: blue;
+  overflow: hidden;
+  background-color: rgb(255, 247, 135);
+
+}
+
+.nav-container a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .profile-card-container {
@@ -36,7 +47,6 @@ body {
 }
 
 .profile-card-front {
-  background-color: aquamarine;
   padding: 10px;
   border-radius: 10px;
 }
@@ -59,5 +69,45 @@ body {
 .img-container {
   border-radius: 10px;
   height: 300px;
-  background-color: black;
+  
 }
+
+img{
+  width: 330px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#profile-name{
+  font-size: 2.5em;
+  margin: 50px 0px 25px 0px;
+}
+
+.info-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#bar{
+  width: 100px;
+  height: 5px;
+  background-color: blue;
+  border-radius: 5px;
+}
+
+#Job{
+  margin: 25px 0px 0px 0px;
+}
+
+.back-info-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+

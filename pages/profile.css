@@ -93,6 +93,7 @@ body {
   background-color: transparent;
   border-radius: 10px;
   transform: rotateY(180deg);
+  border:3px solid rgb(255, 247, 135) ;
 }
 
 .img-container {
@@ -136,4 +137,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.info{
+ font-weight: 600;
 }

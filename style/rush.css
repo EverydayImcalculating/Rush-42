@@ -13,11 +13,62 @@ body {
   background-color: black;
 }
 .main-container {
+  height: 90% !important;
+  width: 100%;
+  background-image: url(/static/bocchi-the-rock-character-appreciation-analysis-vol-ii-part-v0-hpwox4m07f9a1.jpg);
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.card-box{
+    width: 475px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#card1, #card2{
+    
+    flex: 50%;
+    height: 100%;
+}
+.center{
+    width: 65%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+.img-profile{
+    border-radius: 15px;
+    max-height:476px ;
+}
+.img-profile-link{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+@media only screen and (max-width: 900px) {
+  .main-container {
     height: 90% !important;
     width: 100%;
-    
-    background-image: url(/static/nijika-wall2.jpg);
+
+    background-image: url(/static/bocchi-the-rock-character-appreciation-analysis-vol-ii-part-v0-hpwox4m07f9a1.jpg);
+    background-color: rgb(22, 26, 26);
+
     background-size: cover;
     background-origin: content-box;
-    background-position:70% 50%;
+    background-position: left;
   }
+}

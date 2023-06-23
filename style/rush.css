@@ -1,13 +1,19 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
+body {
+  width: 100vw;
+  height: 100vh;
 }
 
-.nav-container{
-    min-height: 80px;
-    background-color: black;
+.nav-container {
+  height: 10% !important;
+  width: 100%;
+  background-color: black;
 }
+.main-container {
+    height: 90% !important;
+    width: 100%;
+    background-color: rgb(232, 8, 8);
+  }

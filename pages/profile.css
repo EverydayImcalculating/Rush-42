@@ -34,7 +34,15 @@ body {
 
 .active {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
+
+#home{
+  width: 20px;
+  height: 20px;
+}
+
 
 .nav-container a {
   float: left;

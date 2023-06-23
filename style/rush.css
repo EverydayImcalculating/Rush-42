@@ -15,5 +15,9 @@ body {
 .main-container {
     height: 90% !important;
     width: 100%;
-    background-color: rgb(232, 8, 8);
+    
+    background-image: url(/static/nijika-wall2.jpg);
+    background-size: cover;
+    background-origin: content-box;
+    background-position:70% 50%;
   }

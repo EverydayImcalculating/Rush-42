@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -16,59 +17,201 @@ body {
   height: 90% !important;
   width: 100%;
   background-image: url(/static/bocchi-the-rock-character-appreciation-analysis-vol-ii-part-v0-hpwox4m07f9a1.jpg);
-  /* background-size: cover; */
   background-repeat: no-repeat;
   background-origin: content-box;
   background-position: right;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
 }
-.card-box{
-    width: 475px;
+.card-box {
+  padding: 20px;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title h1 {
+  font-size: 2.2em;
+  text-align: center;
+  color: rgb(231, 160, 255);
+  background-color: rgb(248, 250, 179);
+  border: 3px solid rgb(231, 160, 255);
+  width: 30%;
+  border-radius: 30px;
+}
+.card {
+  padding-top: 10px;
+  background-color: aliceblue;
+  border-collapse: collapse;
+  border: 5px solid rgb(254, 185, 255);
+  border-radius: 15px;
+  width: 48%;
+  height: fit-content;
+}
+.center {
+  width: 75%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-profile {
+  border-radius: 15px;
+  max-height: 476px;
+}
+.img-profile-link {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+.info {
+  padding: 10px;
+  height: 20%;
+  background-color: aliceblue;
+  border-radius: 15px;
+  z-index: -1;
+  position: relative;
+  transform: translate(0, -110%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  font: 1.5em sans-serif;
+}
+.job {
+  font: 1em sans-serif;
+}
+.topic {
+    background-color: rgb(255, 118, 118);
+    color: aliceblue;
+  font-size: 2em;
+  width: 30%;
+  text-align: center;
+  border: 2px solid rgb(254, 185, 255);
+  border-radius: 20px;
+}
+
+.card:hover .info {
+  transition-duration: 0.45s;
+  transform: translate(0, 0);
+  z-index: 0;
+}
+.card:hover {
+  transform: scale(1.2);
+  transition-duration: 0.7s;
+}
+@media only screen and (max-width: 1230px) {
+  .nav-container {
+    height: 10% !important;
+    width: 100%;
+    background-color: black;
+  }
+  .main-container {
+    min-width: 420px;
+    background-image: url(/static/wallhaven-gp78gl.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .card-box {
+    max-width: 540px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-}
+    justify-content: space-between;
+  }
 
-.title{
-    text-align: center;
+  .title {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-#card1, #card2{
-    
-    flex: 50%;
-    height: 100%;
-}
-.center{
-    width: 65%;
+    align-items: center;
+  }
+  .title h1 {
+    font-size: 2.2em;
+    text-align: center;
+    color: rgb(231, 160, 255);
+    background-color: rgb(248, 250, 179);
+    border: 3px solid rgb(231, 160, 255);
+    width: 60%;
+    border-radius: 30px;
+  }
+  .card {
+    padding-top: 10px;
+    background-color: aliceblue;
+    border-collapse: collapse;
+    border: 5px solid rgb(254, 185, 255);
+    border-radius: 15px;
+    width: 48%;
+    height: fit-content;
+  }
+  .center {
+    width: 100%;
     height: 80%;
     display: flex;
-    justify-content: center;
-}
-.img-profile{
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-profile {
     border-radius: 15px;
-    max-height:476px ;
-}
-.img-profile-link{
+    max-height: 476px;
+  }
+  .img-profile-link {
+    z-index: 2;
     display: flex;
     justify-content: center;
-    padding: 5px;
-}
-@media only screen and (max-width: 900px) {
-  .main-container {
-    height: 90% !important;
-    width: 100%;
+  }
+  .info {
+    padding: 10px;
+    height: 20%;
+    background-color: aliceblue;
+    border-radius: 15px;
+    z-index: -1;
+    position: relative;
+    transform: translate(0, -110%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .name {
+    font: 1.5em sans-serif;
+  }
+  .job {
+    text-align: center;
+    font: 1em sans-serif;
+  }
+  .topic {
+    color: rgb(231, 160, 255);
+    background-color: aliceblue;
+    font-size: 2em;
+    width: 60%;
+    text-align: center;
+    border: 2px solid rgb(254, 185, 255);
+    border-radius: 20px;
+  }
 
-    background-image: url(/static/bocchi-the-rock-character-appreciation-analysis-vol-ii-part-v0-hpwox4m07f9a1.jpg);
-    background-color: rgb(22, 26, 26);
-
-    background-size: cover;
-    background-origin: content-box;
-    background-position: left;
+  .card:hover .info {
+    transition-duration: 0.45s;
+    transform: translate(0, 0);
+    z-index: 0;
+  }
+  .card:hover {
+    transform: scale(1.2);
+    transition-duration: 0.7s;
   }
 }
